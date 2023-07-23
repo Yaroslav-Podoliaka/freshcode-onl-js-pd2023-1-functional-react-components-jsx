@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.watch-item {
+  background-color: darkgoldenrod;
+  border: 1px solid black;
+  margin: 10px;
+  min-width: 500px;
+  max-width: 600px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.watch-item.done {
+  background-color: cadetblue;
+}
+.delene-btn {
+  border: 1px solid black;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  padding-top: 10px;
+}
+.content {
+  min-width: 400px;
+  margin-right: 50px;
+  font-size: 20px;
+}
