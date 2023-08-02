@@ -48,12 +48,10 @@ function App() {
   function toggleToWatch(id) {
     const updateMovie = toWatchMovies.find((movie) => movie.id === id);
     updateMovie.isDone = !updateMovie.isDone;
-    api.put(`/${id}`, updateMovie)
-      .then(({ data }) => {
+    api.put(`/${id}`, updateMovie).then(({ data }) => {
         setToWatchMovies(toWatchMovies.map((movie) =>
           movie.id !== id ? movie : data));
     })
-    setToWatchMovies(newWatchMovies);
   }
 
   function addNewMovie(movie) {

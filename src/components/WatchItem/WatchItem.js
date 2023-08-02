@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './WatchItem.css';
 
 const stylesWatchItem = {
+
   color: "blue",
 };
 
@@ -43,11 +44,8 @@ function WatchItem({ movie, onToggle, onDelete }) {
 }
 
 WatchItem.propTypes = {
-  movie: PropTypes.object
-};
-
-WatchItem.defaultProps = {
-  movie: {},
+  onToggle: PropTypes.func.isRequired,
+  onDelete: PropTypes.func
 };
 
 export default WatchItem;

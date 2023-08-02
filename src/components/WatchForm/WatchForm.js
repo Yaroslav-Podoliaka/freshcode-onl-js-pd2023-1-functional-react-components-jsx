@@ -45,4 +45,4 @@ WatchForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
   
-export default WatchForm
+export default WatchForm;
