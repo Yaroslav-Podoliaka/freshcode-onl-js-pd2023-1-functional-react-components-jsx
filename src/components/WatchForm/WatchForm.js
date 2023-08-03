@@ -19,7 +19,7 @@ function WatchForm({onSubmit}) {
       director,
       isDone: false,
     })
-  }
+  };
 
   return (
     <form onSubmit={onFormSubmit}>

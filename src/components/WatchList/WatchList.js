@@ -23,11 +23,10 @@ WatchList.propTypes = {
   movies: PropTypes.array,
   onToggle: PropTypes.func.isRequired,
   onDelete: PropTypes.func
-}
+};
 
 WatchList.defaultProps = {
-movies: []
-}
+  movies: []
+};
 
 export default WatchList;
-
